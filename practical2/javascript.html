@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Javascript Introduction</title>
+      <script>
+          function myFunction() {
+             document.getElementById("jsintro1").innerHTML = "Hello JavaScript!";
+             document.getElementById("jsintro1").style.color = "red";
+             document.getElementById("jsintro1").style.backgroundColor = "blue";
+             document.getElementById("img1").src = "images/night.jpg";
+             var list = document.getElementsByClassName("example")[0];
+   
+ list.getElementsByClassName("child")[1].innerHTML = "Milk";
+          }
+      </script>
+  </head>
+  <body>
+      <p id="jsintro1">Javascript Introduction</p>
+      <button type="button" onclick="myFunction()">Click Me!</button> <br /><br />
+      <img id="img1" src="images/tree.jpg" alt="Background Image" height="400" width="500">
+      <ul class="example">
+          <li class="child">Coffee</li>
+          <li class="child">Tea</li>
+      </ul>
+  </body>  
+</html>
